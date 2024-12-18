@@ -1,5 +1,5 @@
 # lichtgefecht-website
-
+[![status-badge](https://ci.pfudi.de/api/badges/6/status.svg)](https://ci.pfudi.de/repos/6)
 
 ## Generate css
 ```
