@@ -1,0 +1,18 @@
+steps:
+  build:
+    image: hugomods/hugo:latest
+    commands: |
+      hugo --logLevel debug --config config-release.toml      
+  upload:
+    image: woodpeckerci/plugin-s3
+    settings:
+      bucket: website-lichtgefecht-de
+      access_key: 
+        from_secret: s3-access-key
+      secret_key: 
+        from_secret: s3-access-secret
+      source: public/**/*
+      target: /
+      endpoint: https://blob.pfudi.de
+      path_style: true
+      strip_prefix: true

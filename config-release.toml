@@ -1,0 +1,7 @@
+baseURL = "https://lichtgefecht.de/"
+languageCode = "en"
+timeout = "5m"
+theme = "blowfish"
+
+[params]
+  isRelease = true
